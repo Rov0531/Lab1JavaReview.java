@@ -16,6 +16,13 @@ public class MyBookList {
 
 
         // 3.) Change the current page of "Rich Dad Poor Dad" to 50 and "Atomic Habits" to 100 using the changePage method. Display the details again for the two books.
+        public static void changePage() {
+book1.changePage(50);
+book3.changePage(100);
+
+System.out.println("\nAfter changing pages:");
+book1.displayDetails();
+book3.displayDetails();
 
 
         // 4.) Change the current page of your favorite book to any page number you like. Display the details again for your favorite book.
@@ -27,4 +34,5 @@ public class MyBookList {
         // 6.) Create an array of Book objects to store all the books you created. Loop through the array and display the title of the books published after 2010.
 
     }
+
 }
