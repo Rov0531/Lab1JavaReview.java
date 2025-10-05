@@ -26,13 +26,30 @@ book3.displayDetails();
 
 
         // 4.) Change the current page of your favorite book to any page number you like. Display the details again for your favorite book.
-
+            // 4.) Change the current page of your favorite book
+book5.changePage(75);
+System.out.println("\nAfter changing page of your favorite book:");
+book5.displayDetails();
 
         // 5.) Change the author of "Java Programming" to "Jane Smith". Display the details again for the book.
+book4.setAuthor("Jane Smith");
+System.out.println("\nAfter changing author of Java Programming:");
+book4.displayDetails();
 
 
         // 6.) Create an array of Book objects to store all the books you created. Loop through the array and display the title of the books published after 2010.
+            public static void main(String[]args){
+
+Book[] books = {book1, book2, book3, book4, book5};
+            
+System.out.println("\nBooks published after 2010:");
+for (Book b : books) {
+    if (b.getYearPublished() > 2010) {
+        System.out.println("- " + b.getTitle());
+    }
+}
 
     }
 
 }
+
